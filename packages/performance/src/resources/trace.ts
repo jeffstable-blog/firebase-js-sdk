@@ -65,12 +65,8 @@ export class Trace implements PerformanceTrace {
     traceMeasureName?: string
   ) {
     if (!this.isAuto) {
-      this.traceStartMark = `${TRACE_START_MARK_PREFIX}-${this.randomId}-${
-        this.name
-      }`;
-      this.traceStopMark = `${TRACE_STOP_MARK_PREFIX}-${this.randomId}-${
-        this.name
-      }`;
+      this.traceStartMark = `${TRACE_START_MARK_PREFIX}-${this.randomId}-${this.name}`;
+      this.traceStopMark = `${TRACE_STOP_MARK_PREFIX}-${this.randomId}-${this.name}`;
       this.traceMeasure =
         traceMeasureName ||
         `${TRACE_MEASURE_PREFIX}-${this.randomId}-${this.name}`;
