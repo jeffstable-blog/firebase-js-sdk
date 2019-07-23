@@ -24,6 +24,7 @@ import 'promise-polyfill/lib/polyfill';
 // ES6
 import 'core-js/features/array/find';
 import 'core-js/features/array/find-index';
+import 'core-js/features/array/some';
 import 'core-js/features/object/assign';
 import 'core-js/features/string/starts-with';
 import 'core-js/features/string/repeat';
